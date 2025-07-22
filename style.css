@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* حركة الظهور */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+
+  body {
+    font-family: 'Tajawal', sans-serif;
+  }
+
+ .scroll-container {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.contact-info {
+  background: #1a1a1a;
+  color: #fff;
+  flex: 1;
+  padding: 30px;
+  min-width: 300px;
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.form {
+  flex: 2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.double-input {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  font-size: 0.9rem;
+}
+
+textarea {
+  resize: none;
+  border-bottom: 2px solid #000;
+  height: 100px;
+}
+
+.radio-group {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.radio-group p {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.radio-group label {
+  margin-right: 20px;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #222;
+}
+
+.contact-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  flex-shrink: 0;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 30px 30px;
+  text-align: left;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.footer .social-icons span {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-contact {
+  max-width: 250px;
+}
+
+.footer-contact .email {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+  font-size: 0.75rem;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
